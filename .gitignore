@@ -46,3 +46,32 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+/vendor/
+/node_modules/
+/.vscode/
+/.idea/
+/.DS_Store
+/.env
+/.env.example
+/.env.local
+/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.yarn-integrity    
+/.yarn-metadata
+/.pnp.*
+.pnp.js
+.pnp.js.map
+.pnp.cjs
+.pnp.cjs.map
+.pnp.mjs
+.pnp.mjs.map
+.pnp.json
+
+# Local development files   
+/.editorconfig
+composer.lock
+composer.phar
+
