@@ -1,6 +1,18 @@
 name: WPCS check
 
-on: pull_request
+on:
+  push:
+    branches:
+    - main
+    - staging
+    - canary-server
+    - release/*
+  pull_request:
+    branches:
+    - main
+    - staging
+    - canary-server
+  
 
 jobs:
   phpcs:
