@@ -1,0 +1,18 @@
+name: WPCS check
+
+on: pull_request
+
+jobs:
+  phpcs:
+    name: WPCS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # This is very important. Without this the linting of only the changed lines will not work. 
+      - name: WPCS check
+        uses: 10up/wpcs-action@stable
+        with:
+          standard: 10up-Default
+          enable_warnings: true
+          only_changed_lines: true
